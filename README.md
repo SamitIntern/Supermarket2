@@ -30,6 +30,8 @@ Your browser tab should look like this:
 
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Welcome%20screen.png "Welcome Screen")
 
+***
+
 
 *Lets initialize the repository*
 
@@ -42,6 +44,8 @@ Your browser tab should look something like this:
 
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Repository%20Creation.png "Repository Creation")
 
+
+***
 
 
 *Let's add a Product*
@@ -56,6 +60,7 @@ Your browser tab should look like this:
 
 Here *Samit* is the name of the product, that is priced at *$2.7* and has a product code of *ffff-gggg-dddd-vvv3*. The generated ID is 5 (this is generated within the code).
 
+***
 
 *Let's delete a Product*
 
@@ -68,6 +73,35 @@ Your browser tab should look like this:
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Valid%20Delete.png "Valid Deletion")
 
 Notice that the image where repository was created had a product with ID 1 but now it is no more there. 1 is the ID of the product that was to be deleted.
+
+***
+
+*Let's see the current state of our repository*
+
+This is to see the current state of the repository i.e. what all products are in the repository currently. Type the following in your web browser:
+
+`http://localhost:8080/supermarket/all/showall/`
+
+Your browser tab should look like this:
+
+![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Repository%20Search.png "Repository Search")
+
+Please note that in the above steps we have added a product which has an ID as 5 and deleted a product with ID as 1. Both the changes are being reflected here.
+
+***
+
+
+*Let's look for a particular product in the repository*
+
+To look for a particular product in the repository, type the following in your web browser:
+
+`http://localhost:8080/supermarket/2/`
+
+Your browser tab should look like this:
+
+![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Product%20Search.png "Product Search")
+
+Notice that the "2" in the end is the product ID.
 
 ***
 
@@ -86,6 +120,7 @@ In case a product has already been deleted, if you try to delete it again, you m
 
 Reason: The product is no longer in the repository and hence the application cannot delete it.
 
+***
 
 *Adding the same product twice or more*
 
@@ -95,6 +130,8 @@ In case you try adding a product with the same *Product Code* again, you may see
 
 Reason: When you try adding a product twice, the application rejects it as a product with the same product code already exists in the repository. So you cannot add again. Also, products with the same name can exist but not product code. For example Cranberry Juice of volume 32 FL Oz and of volume 64 FL Oz will both be called Cranberry Juice but will have a different product code.
 
+***
+
 *Adding a Product with the same Product Code unknowingly*
 
 There might be a scenario where you feel that your product code is unique and should be added, but that is not what's happening. There you might see something like this:
@@ -102,6 +139,19 @@ There might be a scenario where you feel that your product code is unique and sh
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Invalid%20Addition%202.png "Invalid Addition 2")
 
 Reason: The product codes are unique and case insensitive. Notice that the product code is the same in the previous image but the four Gs are in caps here. The application will treat these both codes as same and hance just by changing the case of your product code (upper to lower case or vice versa) you do not generate a new product code.
+
+***
+
+
+*Looking for a non-existent product in the repository*
+
+Sometimes, you may search for a product in the repository and get an error. This generally would only happen if the repository no more contains that product, something like someone else using the application has already deleted it. In such a scenario, your browser screen should look something like this:
+
+![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Invalid%20Search.png "Invalid Search")
+
+Reason: Remember that while deleting a product we chose to delete the product with product ID as 1.
+
+***
 
 
 Conclusion

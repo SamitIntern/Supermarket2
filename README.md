@@ -21,11 +21,11 @@ In the following section, you will get to know how to use the application. Once 
 
 *Starting the Application*
 
-To start the application, go to your web browser and type the following:
+To start the application, curl the following URL:
 
 `http://localhost:8080/supermarket/`
 
-Your browser tab should look like this: 
+Your terminal should look like this: 
 
 
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Screenshots/Welcome%20screen.png "Welcome Screen")
@@ -35,11 +35,11 @@ Your browser tab should look like this:
 
 *Lets initialize the repository*
 
-To initialize the repository, type the following in your web browser: 
+To initialize the repository, curl the following URL: 
 
 `http://localhost:8080/supermarket/get/createrepo/`
 
-Your browser tab should look something like this:
+Your terminal should look something like this:
 
 
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Screenshots/Repository%20Creation.png "Repository Creation")
@@ -50,11 +50,11 @@ Your browser tab should look something like this:
 
 *Let's add a Product*
 
-To add a new product to the repository, type the following in your web browser:
+To add a new product to the repository, curl the following URL:
 
-`http://localhost:8080/supermarket/get/new/samit/2.78/ffff-gggg-dddd-vvv3/`
+`http://localhost:8080/supermarket/new/`
 
-Your browser tab should look like this:
+Your terminal should look like this:
 
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Screenshots/valid%20addition.png "Valid Addition")
 
@@ -64,11 +64,11 @@ Here *Samit* is the name of the product, that is priced at *$2.7* and has a prod
 
 *Let's delete a Product*
 
-To delete a product in the repository, type the following in your web browser:
+To delete a product in the repository, curl following URL:
 
-`http://localhost:8080/supermarket/get/delete/1/`
+`http://localhost:8080/supermarket/delete/1/`
 
-Your browser tab should look like this:
+Your terminal should look like this:
 
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Screenshots/Valid%20Delete.png "Valid Deletion")
 
@@ -78,22 +78,21 @@ Notice that the image where repository was created had a product with ID 1 but n
 
 *Let's see the current state of our repository*
 
-This is to see the current state of the repository i.e. what all products are in the repository currently. Type the following in your web browser:
+This is to see the current state of the repository i.e. what all products are in the repository currently. Curl the following URL:
 
 `http://localhost:8080/supermarket/all/showall/`
 
-Your browser tab should look like this:
+Your terminal should look like this:
 
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Screenshots/Repository%20Search.png "Repository Search")
 
-Please note that in the above steps we have added a product which has an ID as 5 and deleted a product with ID as 1. Both the changes are being reflected here.
 
 ***
 
 
 *Let's look for a particular product in the repository*
 
-To look for a particular product in the repository, type the following in your web browser:
+To look for a particular product in the repository, curl the following URL:
 
 `http://localhost:8080/supermarket/2/`
 

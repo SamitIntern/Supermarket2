@@ -56,7 +56,7 @@ To add a new product to the repository, curl the following URL:
 
 Your terminal should look like this:
 
-![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Screenshots/valid%20addition.png "Valid Addition")
+![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Screenshots/valid%20add.png "Valid Addition")
 
 Here *Samit* is the name of the product, that is priced at *$2.7* and has a product code of *ffff-gggg-dddd-vvv3*. The generated ID is 5 (this is generated within the code).
 

@@ -156,4 +156,4 @@ Reason: Remember that while deleting a product we chose to delete the product wi
 Conclusion
 -----------
 
-To summarize, this application caters to most of the needs of supermarket as requested. The application can be checked via browser as well as via "Postman". To check via browser, in case of initialization of repository and addition and deletion of a product one has to add a "/get/" after supermarket. The same is not needed while testing via Postman.
+To summarize, this application caters to most of the needs of supermarket as requested. The application can be checked via  "Postman" for all the DELETE and POST methods. The GET services can be tested via Postman as well as via the browser.

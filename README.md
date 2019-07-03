@@ -72,7 +72,7 @@ Your terminal should look like this:
 
 ![alt text](https://github.com/SamitIntern/Supermarket2/blob/Samit/Screenshots/Valid%20Delete.png "Valid Deletion")
 
-Notice that the image where repository was created had a product with ID 1 but now it is no more there. 1 is the ID of the product that was to be deleted.
+Notice that the image where repository was created had a product with ID 2 but now it is no more there. 2 is the ID of the product that was to be deleted.
 
 ***
 
